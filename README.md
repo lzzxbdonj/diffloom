@@ -4,6 +4,8 @@
 
 Diffloom is a local-first JSON comparison workbench for the browser. Compare an API response, review a configuration change, or untangle a package manifest in a focused, side-by-side workspace—without sending your documents to a service.
 
+[Live demo](https://lzzxbdonj.github.io/diffloom/) · [GitHub repository](https://github.com/lzzxbdonj/diffloom)
+
 [简体中文](README.zh-CN.md) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [MIT license](LICENSE)
 
 ![Diffloom's side-by-side JSON editors and structured comparison report](docs/screenshot.png)
@@ -140,7 +142,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, behavior contracts, and pull r
 
 ## Publish to GitHub Pages
 
-The repository name, owner, and publication decision are yours; no live repository or hosted demo is assumed here.
+The [public demo](https://lzzxbdonj.github.io/diffloom/) is hosted with GitHub Pages. To deploy your own fork, use the workflow below; its publication remains under your control.
 
 The [Pages workflow](.github/workflows/pages.yml) is **manual-only** (`workflow_dispatch`). In your chosen GitHub repository, enable Actions, select **GitHub Actions** as the Pages build source in **Settings → Pages**, and run **Deploy to GitHub Pages** from the Actions tab. The workflow installs locked dependencies, builds `dist/`, uploads that directory as a Pages artifact, and deploys it through the Pages environment. Follow GitHub's displayed deployment URL after a successful run; any configured environment approval still applies.
 

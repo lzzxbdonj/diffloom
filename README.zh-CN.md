@@ -4,6 +4,8 @@
 
 Diffloom 是一个本地优先、在浏览器中运行的 JSON 对比工作台。用它检查 API 响应、配置变更或 package manifest，在并排编辑器中查看结构化差异，无须把文档上传到服务端。
 
+[在线体验](https://lzzxbdonj.github.io/diffloom/) · [GitHub 仓库](https://github.com/lzzxbdonj/diffloom)
+
 [English](README.md) · [贡献指南](CONTRIBUTING.md) · [安全政策](SECURITY.md) · [MIT 许可](LICENSE)
 
 ![Diffloom 的并排 JSON 编辑器与结构化差异报告](docs/screenshot.png)
@@ -140,7 +142,7 @@ tests/
 
 ## 发布到 GitHub Pages
 
-仓库名称、所有者以及是否发布都由你决定；本文不假设已经存在在线仓库或演示地址。
+[公开演示](https://lzzxbdonj.github.io/diffloom/)已部署到 GitHub Pages。若要部署自己的 fork，可使用以下工作流；是否发布仍由你决定。
 
 [Pages 工作流](.github/workflows/pages.yml) **仅手动触发**（`workflow_dispatch`）。在你选择的 GitHub 仓库中启用 Actions，将 **Settings → Pages** 的构建来源设为 **GitHub Actions**，再到 Actions 页面手动运行 **Deploy to GitHub Pages**。工作流会安装锁定依赖、构建 `dist/`、上传 Pages artifact，并通过 Pages environment 部署。成功后使用 GitHub 显示的部署地址；如果设置了环境审批，仍需按要求批准。
 
