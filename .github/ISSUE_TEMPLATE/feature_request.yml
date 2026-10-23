@@ -1,0 +1,47 @@
+name: Feature request
+description: Suggest a focused improvement to the JSON comparison workflow.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us about the problem before the implementation. Diffloom is a local-first static workbench with no backend, accounts, analytics, persistence, or runtime package dependencies. Use synthetic examples only.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      description: Describe who encounters it and what is difficult with the current workflow.
+      placeholder: When reviewing an API response, I need to…
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed experience
+      description: Explain how a user would interact with the feature and what they would see.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Concrete example
+      description: A small synthetic JSON example, a mockup, or a walkthrough helps. Do not include credentials or private documents.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Include existing controls or workarounds and why they are insufficient.
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Privacy, accessibility, and complexity
+      description: Note any impact on local-only processing, keyboard use, static hosting, input limits, or comparison semantics. “Not sure” is fine.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked existing issues for a similar request.
+          required: false
+        - label: My examples and attachments do not contain sensitive information.
+          required: true
